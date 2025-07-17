@@ -67,11 +67,11 @@ Grok Interface (grok_interface.py): Integrates with the xAI Grok API to perform 
 This implementation provides a modular, deployable solution for PDF-based information retrieval using Grok and Streamlit, suitable for both local development and potential production deployment.
 
 **Techstack Used:**
-Python
-LangChain
-Streamlit
-GROK
-FAISS
+- Python
+- LangChain
+- Streamlit
+- GROK
+- FAISS
 
 Contributing
 Feel free to submit issues or pull requests to enhance the project!
