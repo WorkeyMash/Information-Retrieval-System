@@ -73,8 +73,8 @@ This implementation provides a modular, deployable solution for PDF-based inform
 - GROK
 - FAISS
 
-Contributing
-Feel free to submit issues or pull requests to enhance the project!
-License
-MIT License (or specify your preferred license).
+**Contributing**
+*Feel free to submit issues or pull requests to enhance the project!*
+*License*
+*MIT License (or specify your preferred license).*
  - This project implements a modular PDF Information Retrieval System with the following components:
