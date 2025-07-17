@@ -1,39 +1,41 @@
 **Project Overview**
- - This project implements a modular PDF Information Retrieval System with the following components:
 
-1. **Document Processor (`document_processor.py`)**: Extracts text from PDFs and splits it into chunks using LangChain's text splitter.
-2. **Vector Store (`vector_store.py`)**: Creates embeddings using HuggingFace's `distilbert-base-uncased` and stores them in a FAISS vector database.
-3. **Grok Interface (`grok_interface.py`)**: Integrates with the xAI Grok API for retrieval-augmented generation (RAG).
-4. **Streamlit App (`app.py`)**: Provides a user-friendly interface for uploading PDFs and querying the system.
-5. **Requirements (`requirements.txt`)**: Lists all necessary Python dependencies.
+PDF Information Retrieval System
+This project is a Streamlit-based application designed to process PDF documents and enable information retrieval using a retrieval-augmented generation (RAG) system powered by the xAI Grok API.
+
 
 ### Setup Instructions
 1. **Environment Setup**:
-   - Create a virtual environment:
-     ```bash
-     python -m venv venv
-     source venv/bin/activate  # On Windows: venv\Scripts\activate
-     ```
-   - Install dependencies:
-     ```bash
-     pip install -r requirements.txt
-     ```
-   - Obtain a Grok API key from [xAI Console](https://console.x.ai) and create a `.env` file in the project root:
-     ```plaintext
-     GROK_API_KEY=your-api-key-here
-     ```
+   Clone the repository:
+git clone https://github.com/your-repo/information-retrieval-system.git
+cd information-retrieval-system
+
+
+Create a virtual environment and activate it:
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+
+Install the required dependencies:
+pip install -r requirements.txt
+
+
+Set up your xAI Grok API key in a .env file:
+GROK_API_KEY=your_api_key_here
+
+
+Run the Streamlit app:
+streamlit run app.py
+
 
 2. **Directory Structure**:
-   ```
-   pdf_retrieval_system/
-   ├── pdfs/                 # Directory for PDF files
-   ├── .env                  # Environment variables (GROK_API_KEY)
-   ├── requirements.txt      # Dependencies
-   ├── document_processor.py # PDF processing module
-   ├── vector_store.py       # Vector store module
-   ├── grok_interface.py     # Grok API integration
-   └── app.py                # Streamlit app
-   ```
+ The core functionality is packaged into a single src/helper.py file, which includes the following components:
+
+Document Processor (document_processor.py): Extracts text from PDFs and splits it into manageable chunks using LangChain's RecursiveCharacterTextSplitter. This allows for efficient text processing and preparation for embedding.
+
+Vector Store (vector_store.py): Creates embeddings using HuggingFace's distilbert-base-uncased model and stores them in a FAISS vector database. This enables fast similarity searches for retrieving relevant document chunks.
+
+Grok Interface (grok_interface.py): Integrates with the xAI Grok API to perform retrieval-augmented generation (RAG), combining retrieved document context with the Grok model to generate accurate and context-aware responses.
 
 3. **Run the Application**:
    - Create a `pdfs` directory and place your PDF files there.
@@ -44,8 +46,10 @@
    - Open the provided URL (e.g., `http://localhost:8501`) in your browser.
 
 4. **Usage**:
-   - In the sidebar, enter the path to your PDF directory (default: `./pdfs`) and click "Process PDFs".
-   - Once processed, enter a question in the main interface and click "Get Answer" to retrieve answers and source document snippets.
+   
+- Upload PDF files or specify a directory containing PDFs via the sidebar.
+- Process the PDFs to create a vector store and initialize the Grok interface.
+- Ask questions in the main interface to retrieve answers based on the processed documents.
 
  ### Customization
 - **PDF Directory**: Modify the default directory in the Streamlit interface or `app.py`.
@@ -61,3 +65,16 @@
 - **Interface**: Enhance the Streamlit app with features like PDF upload via the UI or chat history.
 
 This implementation provides a modular, deployable solution for PDF-based information retrieval using Grok and Streamlit, suitable for both local development and potential production deployment.
+
+**Techstack Used:**
+Python
+LangChain
+Streamlit
+GROK
+FAISS
+
+Contributing
+Feel free to submit issues or pull requests to enhance the project!
+License
+MIT License (or specify your preferred license).
+ - This project implements a modular PDF Information Retrieval System with the following components:
