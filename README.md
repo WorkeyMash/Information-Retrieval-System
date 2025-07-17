@@ -78,8 +78,10 @@ Grok Interface (grok_interface.py): Integrates with the xAI Grok API to perform 
 - FAISS
 
 **Contributing**
-*Feel free to submit issues or pull requests to enhance the project!*
-*License*
+   * Feel free to submit issues or pull requests to enhance the project!*
+     
+**License**
+
 *MIT License (or specify your preferred license).*
  - This project implements a modular PDF Information Retrieval System with the following components:
  - This implementation provides a modular, deployable solution for PDF-based information retrieval using Grok and Streamlit, suitable for both local development and potential production deployment.
