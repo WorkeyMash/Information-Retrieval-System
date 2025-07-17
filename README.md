@@ -69,7 +69,6 @@ Grok Interface (grok_interface.py): Integrates with the xAI Grok API to perform 
 - **Scalability**: Add caching for embeddings to avoid reprocessing PDFs on each run.
 - **Interface**: Enhance the Streamlit app with features like PDF upload via the UI or chat history.
 
-This implementation provides a modular, deployable solution for PDF-based information retrieval using Grok and Streamlit, suitable for both local development and potential production deployment.
 
 **Techstack Used:**
 - Python
@@ -83,3 +82,5 @@ This implementation provides a modular, deployable solution for PDF-based inform
 *License*
 *MIT License (or specify your preferred license).*
  - This project implements a modular PDF Information Retrieval System with the following components:
+ - This implementation provides a modular, deployable solution for PDF-based information retrieval using Grok and Streamlit, suitable for both local development and potential production deployment.
+
