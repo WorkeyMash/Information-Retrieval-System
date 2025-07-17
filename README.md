@@ -6,18 +6,18 @@ This project is a Streamlit-based application designed to process PDF documents 
 
 ### Setup Instructions
 1. **Environment Setup**:
-   Clone the repository:
-git clone https://github.com/your-repo/information-retrieval-system.git
-cd information-retrieval-system
+Clone the repository: 
+ ```git clone https://github.com/your-repo/information-retrieval-system.git ```
+ ```cd information-retrieval-system ``` 
 
 
 Create a virtual environment and activate it:
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+ ```python -m venv venv ```
+ ```source venv/bin/activate  # On Windows: venv\Scripts\activate ```
 
 
 Install the required dependencies:
-pip install -r requirements.txt
+ ```pip install -r requirements.txt ```
 
 
 Set up your xAI Grok API key in a .env file:
@@ -25,7 +25,7 @@ GROK_API_KEY=your_api_key_here
 
 
 Run the Streamlit app:
-streamlit run app.py
+ ```streamlit run app.py ```
 
 
 2. **Directory Structure**:
